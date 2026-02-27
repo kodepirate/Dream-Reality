@@ -15,9 +15,8 @@ const SmartOwnership = () => {
     const leftX = useTransform(scrollYProgress, [0, 0.4], ["-110%", "0%"]);
     const rightX = useTransform(scrollYProgress, [0, 0.4], ["110%", "0%"]);
 
-    const sideTextOpacity = useTransform(scrollYProgress, [0.3, 0.5], [1, 0]);
-
-    const mergedTextOpacity = useTransform(scrollYProgress, [0.45, 0.6], [0, 1]);
+    const initialTextOpacity = useTransform(scrollYProgress, [0.3, 0.4], [1, 0]);
+    const finalTextOpacity = useTransform(scrollYProgress, [0.45, 0.55], [0, 1]);
 
     const buttonOpacity = useTransform(scrollYProgress, [0.6, 0.8], [0, 1]);
     const buttonY = useTransform(scrollYProgress, [0.6, 0.7], [20, 0]);

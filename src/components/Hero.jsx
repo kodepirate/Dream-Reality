@@ -57,7 +57,7 @@ const Hero = () => {
             <header className={`hero-navbar ${isScrolled ? 'scrolled' : ''} ${isHidden ? 'hidden-navbar' : ''}`}>
                 <div className="navbar-container">
                     <motion.div className="logo" style={{ opacity: logoOpacity }}>
-                        <img src={logoImage} alt="Dubai Dream Realty" loading="eager" />
+                        <img src={logoImage} alt="Dubai Dream Realty" width="160" height="50" style={{ objectFit: 'contain' }} loading="eager" />
                     </motion.div>
                     <nav className="nav-links">
                         <a href="#hero">Home</a>

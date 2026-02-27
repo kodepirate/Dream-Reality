@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="footer-column brand-column">
                         <div className="footer-logo">
-                            <img src={logo} alt="Dubai Dream Reality Logo" loading="lazy" />
+                            <img src={logo} alt="Dubai Dream Reality Logo" width="160" height="50" style={{ objectFit: 'contain' }} loading="lazy" />
                         </div>
                         <p className="footer-description">
                             Elevating the standard of luxury living in Dubai. We help you find

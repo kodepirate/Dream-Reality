@@ -48,7 +48,7 @@ const DreamProperties = () => {
                             }}
                             whileHover={{ scale: 1.03, zIndex: 10, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
                         >
-                            <img src={skyscraperImg} alt="Luxury Skyscraper" loading="lazy" />
+                            <img src={skyscraperImg} alt="Luxury Skyscraper" width="800" height="1000" style={{ objectFit: 'cover' }} loading="lazy" />
                             <div className="tall-img-overlay"></div>
                             <motion.div
                                 className="glass-badge"
@@ -75,7 +75,7 @@ const DreamProperties = () => {
                                 }}
                                 whileHover={{ scale: 1.03, zIndex: 10, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
                             >
-                                <img src={domesImg} alt="White Domes Villa" loading="lazy" />
+                                <img src={domesImg} alt="White Domes Villa" width="800" height="600" style={{ objectFit: 'cover' }} loading="lazy" />
                             </motion.div>
 
                             <motion.div
@@ -91,7 +91,7 @@ const DreamProperties = () => {
                                 }}
                                 whileHover={{ scale: 1.03, zIndex: 10, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
                             >
-                                <img src={futuristicImg} alt="Futuristic Building" loading="lazy" />
+                                <img src={futuristicImg} alt="Futuristic Building" width="800" height="600" style={{ objectFit: 'cover' }} loading="lazy" />
                             </motion.div>
                         </div>
                     </div>

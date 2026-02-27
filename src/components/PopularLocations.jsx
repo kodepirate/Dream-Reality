@@ -158,7 +158,7 @@ const PopularLocations = () => {
                                         y: { repeat: Infinity, duration: 4, ease: "easeInOut", delay: (index % 4) * 0.2 }
                                     }}
                                 >
-                                    <img src={property.image} alt={property.title} className="location-img" loading="lazy" />
+                                    <img src={property.image} alt={property.title} className="location-img" width="800" height="600" style={{ objectFit: 'cover' }} loading="lazy" />
                                 </motion.div>
 
                                 <div className="location-details">

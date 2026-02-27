@@ -76,7 +76,9 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <div className="footer-copyright">
                         <p>&copy; {currentYear} Dubai Dream Reality. All Rights Reserved.</p>
-                        <p style={{ marginTop: '10px', fontSize: '0.8rem', color: '#666666' }}>Made by aniket0fficial</p>
+                        <p style={{ marginTop: '10px', fontSize: '0.8rem', color: '#666666' }}>
+                            Made by <a href="https://github.com/kodepirate" target="_blank" rel="noopener noreferrer" className="author-link">aniket0fficial</a>
+                        </p>
                     </div>
                     <div className="footer-legal">
                         <a href="#">Privacy Policy</a>

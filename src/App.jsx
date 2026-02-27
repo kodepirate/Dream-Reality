@@ -18,6 +18,13 @@ import './App.css';
 function App() {
   const [loading, setLoading] = useState(true);
 
+  React.useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <CustomCursor />

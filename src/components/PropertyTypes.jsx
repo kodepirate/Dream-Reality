@@ -35,7 +35,7 @@ const PropertyTypes = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             <img src={property.icon} alt={property.title} className="property-icon" width="64" height="64" style={{ objectFit: 'contain' }} loading="lazy" />
-                            <h4 className="property-title">{property.title}</h4>
+                            <h3 className="property-title">{property.title}</h3>
                         </motion.div>
                     ))}
                 </div>

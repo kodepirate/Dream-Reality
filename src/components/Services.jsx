@@ -48,7 +48,7 @@ const Services = () => {
                                     transition={{ duration: 0.3 }}
                                 />
                             </motion.div>
-                            <h3 className="service-title">{service.title}</h3>
+                            <h2 className="service-title">{service.title}</h2>
                             <p className="service-description">{service.description}</p>
                         </motion.div>
                     ))}

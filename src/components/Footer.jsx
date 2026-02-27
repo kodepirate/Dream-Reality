@@ -30,7 +30,7 @@ const Footer = () => {
 
                     {/* Quick Links Column */}
                     <div className="footer-column">
-                        <h4 className="footer-heading">Quick Links</h4>
+                        <h2 className="footer-heading">Quick Links</h2>
                         <ul className="footer-links">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
@@ -42,7 +42,7 @@ const Footer = () => {
 
                     {/* Services Column */}
                     <div className="footer-column">
-                        <h4 className="footer-heading">Services</h4>
+                        <h2 className="footer-heading">Services</h2>
                         <ul className="footer-links">
                             <li><a href="#">Property Sales</a></li>
                             <li><a href="#">Property Rentals</a></li>
@@ -53,7 +53,7 @@ const Footer = () => {
 
                     {/* Contact Column */}
                     <div className="footer-column contact-column">
-                        <h4 className="footer-heading">Get in Touch</h4>
+                        <h2 className="footer-heading">Get in Touch</h2>
                         <ul className="footer-contact-info">
                             <li>
                                 <BsGeoAlt className="footer-contact-icon" />

@@ -71,6 +71,9 @@ const Hero = () => {
                         <div
                             className={`mobile-menu-btn ${isMobileMenuOpen ? 'open' : ''}`}
                             onClick={toggleMobileMenu}
+                            aria-label="Toggle Mobile Menu"
+                            role="button"
+                            tabIndex={0}
                         >
                             <span></span>
                             <span></span>
@@ -137,6 +140,9 @@ const Hero = () => {
                 animate={{ y: [0, 15, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
                 onClick={scrollToNext}
+                aria-label="Scroll down to About section"
+                role="button"
+                tabIndex={0}
             >
                 <BsArrowDownCircle size={40} className="scroll-icon" />
             </motion.div>

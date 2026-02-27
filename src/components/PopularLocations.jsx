@@ -210,10 +210,10 @@ const PopularLocations = () => {
                     animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                 >
-                    <button className="carousel-btn" onClick={handleScrollLeft}>
+                    <button className="carousel-btn" onClick={handleScrollLeft} aria-label="Previous Locations">
                         <FaChevronLeft />
                     </button>
-                    <button className="carousel-btn" onClick={handleScrollRight}>
+                    <button className="carousel-btn" onClick={handleScrollRight} aria-label="Next Locations">
                         <FaChevronRight />
                     </button>
                 </motion.div>

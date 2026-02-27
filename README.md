@@ -5,7 +5,13 @@ Welcome to the repository for **Dream Reality**, a modern, luxurious, and highly
 ## 🎥 Project Demo
 
 Watch the walkthrough to see the sleek animations and interactive features in action:
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/820478ca636d4bef8e7b2156d0d87696" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+   
+
+https://github.com/user-attachments/assets/84207546-9f9e-455d-9709-274021b666d4
+
+
+</div>
 
 ## ✨ Features
 

@@ -1,0 +1,103 @@
+.partners-section {
+    padding: 60px 0;
+    background-color: #fcfcfc;
+    /* Very light subtle background matching the image */
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.partners-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners-title {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.partners-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Add subtle gradient masks to the edges for a fade effect */
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+.partners-track {
+    display: flex;
+    width: max-content;
+    /* Adjust animation duration depending on how fast you want it to scroll */
+    animation: scrollPartners 30s linear infinite;
+}
+
+.partners-track:hover {
+    /* Pause animation when user hovers over the logos */
+    animation-play-state: paused;
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 250px;
+    /* Fixed width to make calculating the scroll easier */
+    margin: 0 20px;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+/* Fallback styling for the text names */
+.partner-logo span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+
+/* Keyframes for the infinite scroll */
+@keyframes scrollPartners {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Translate by exactly half the track width (the width of one set of logos) */
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .partner-logo {
+        width: 180px;
+        margin: 0 10px;
+    }
+
+    .partner-logo span {
+        font-size: 1.2rem;
+    }
+}

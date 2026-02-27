@@ -26,15 +26,19 @@ function App() {
         {loading && <Loader key="loader" setLoading={setLoading} />}
       </AnimatePresence>
 
-      <Hero />
-      <About />
-      <Services />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Suspense fallback={<div style={{ minHeight: '100vh', backgroundColor: '#0f0f11' }}></div>}>
+          <PropertyTypes />
+          <DreamProperties />
+          <PopularLocations />
+          <SmartOwnership />
+          <Partners />
+        </Suspense>
+      </main>
       <Suspense fallback={<div style={{ minHeight: '100vh', backgroundColor: '#0f0f11' }}></div>}>
-        <PropertyTypes />
-        <DreamProperties />
-        <PopularLocations />
-        <SmartOwnership />
-        <Partners />
         <Footer />
       </Suspense>
     </>

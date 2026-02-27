@@ -22,7 +22,7 @@ const SmartOwnership = () => {
     const buttonY = useTransform(scrollYProgress, [0.6, 0.7], [20, 0]);
 
     return (
-        <section className="smart-ownership-section" ref={containerRef}>
+        <section className="smart-ownership-section" ref={containerRef} id="developers">
             {/* The sticky container holds the animated elements in place while scrolling the outer section */}
             <div className="sticky-animation-wrapper">
 

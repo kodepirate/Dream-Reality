@@ -62,12 +62,12 @@ const Hero = () => {
                     <nav className="nav-links">
                         <a href="#hero">Home</a>
                         <a href="#about">About Us</a>
-                        <a href="#">Developers</a>
-                        <a href="#">Locations</a>
-                        <a href="#">Contact Us</a>
+                        <a href="#developers">Developers</a>
+                        <a href="#locations">Locations</a>
+                        <a href="#contact">Contact Us</a>
                     </nav>
                     <div className="right-section">
-                        <button className="contact-btn hidden-mobile">Get in touch</button>
+                        <button className="contact-btn hidden-mobile" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Get in touch</button>
                         <div
                             className={`mobile-menu-btn ${isMobileMenuOpen ? 'open' : ''}`}
                             onClick={toggleMobileMenu}
@@ -96,12 +96,12 @@ const Hero = () => {
                         <nav className="mobile-nav-links">
                             <a href="#hero" onClick={toggleMobileMenu}>Home</a>
                             <a href="#about" onClick={toggleMobileMenu}>About Us</a>
-                            <a href="#" onClick={toggleMobileMenu}>Developers</a>
-                            <a href="#" onClick={toggleMobileMenu}>Locations</a>
-                            <a href="#" onClick={toggleMobileMenu}>Contact Us</a>
+                            <a href="#developers" onClick={toggleMobileMenu}>Developers</a>
+                            <a href="#locations" onClick={toggleMobileMenu}>Locations</a>
+                            <a href="#contact" onClick={toggleMobileMenu}>Contact Us</a>
                         </nav>
                         <div className="mobile-menu-footer">
-                            <button className="contact-btn">Get in touch</button>
+                            <button className="contact-btn" onClick={() => { toggleMobileMenu(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }}>Get in touch</button>
                         </div>
                     </motion.div>
                 )}

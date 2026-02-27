@@ -120,7 +120,7 @@ const PopularLocations = () => {
     };
 
     return (
-        <section className="popular-locations" ref={sectionRef}>
+        <section className="popular-locations" ref={sectionRef} id="locations">
             <div className="container" style={{ maxWidth: '100%', overflow: 'hidden' }}>
                 <motion.div
                     className="popular-header"

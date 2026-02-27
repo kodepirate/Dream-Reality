@@ -55,9 +55,9 @@ const CustomCursor = () => {
             y: mousePosition.y - 25,
             height: 50,
             width: 50,
-            backgroundColor: "rgba(255, 255, 255, 0.45)", // Semi-transparent pure white
+            backgroundColor: "rgba(255, 255, 255, 0.45)",
             border: "1px solid rgba(255, 255, 255, 1)",
-            mixBlendMode: "normal", // No difference blending, literal white color
+            mixBlendMode: "normal",
             backdropFilter: "blur(2px)",
             transition: { type: "tween", ease: "backOut", duration: 0.1 }
         }

@@ -5,10 +5,9 @@ import './Loader.css';
 
 const Loader = ({ setLoading }) => {
     useEffect(() => {
-        // Simulate loading time (e.g., waiting for fonts/images to load)
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 2500); // 2.5 seconds loading screen
+        }, 2500);
 
         return () => clearTimeout(timer);
     }, [setLoading]);

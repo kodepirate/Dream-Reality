@@ -24,7 +24,6 @@ const Hero = () => {
         const aboutSection = document.getElementById('about');
         if (aboutSection) {
             const aboutBottom = aboutSection.offsetTop + aboutSection.offsetHeight;
-            // Hide navbar when scrolled slightly past the bottom of the about section
             if (latest > aboutBottom - 50) {
                 setIsHidden(true);
             } else {
@@ -33,10 +32,8 @@ const Hero = () => {
         }
     });
 
-    // Fade out as the user scrolls down 500px
     const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
-    // Logo gently fades in fully after starting scrolling down
     const logoOpacity = useTransform(scrollY, [0, 100], [0.5, 1]);
 
     const scrollToNext = () => {

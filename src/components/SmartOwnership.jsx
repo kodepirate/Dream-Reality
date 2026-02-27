@@ -11,22 +11,15 @@ const SmartOwnership = () => {
         offset: ["start start", "end end"]
     });
 
-    // We want the circles to start closing in as soon as we start scrolling,
-    // and fully merge into the center when scrollYProgress is around 0.5.
-
-    // Left circle: Starts at -100% horizontally, moves to 0 offset at 50% scroll.
+    const sectionOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
     const leftX = useTransform(scrollYProgress, [0, 0.4], ["-110%", "0%"]);
-    // Right circle: Starts at 100% horizontally, moves to 0 offset at 50% scroll.
     const rightX = useTransform(scrollYProgress, [0, 0.4], ["110%", "0%"]);
 
-    // Opacity for the individual circle texts (fade out as they merge)
-    const initialTextOpacity = useTransform(scrollYProgress, [0.3, 0.4], [1, 0]);
+    const sideTextOpacity = useTransform(scrollYProgress, [0.3, 0.5], [1, 0]);
 
-    // Opacity for the final "Smart Ownership" centered text (fade in after merging)
-    const finalTextOpacity = useTransform(scrollYProgress, [0.45, 0.55], [0, 1]);
+    const mergedTextOpacity = useTransform(scrollYProgress, [0.45, 0.6], [0, 1]);
 
-    // Opacity for the download button (fade in near the end of the scroll sequence)
-    const buttonOpacity = useTransform(scrollYProgress, [0.6, 0.7], [0, 1]);
+    const buttonOpacity = useTransform(scrollYProgress, [0.6, 0.8], [0, 1]);
     const buttonY = useTransform(scrollYProgress, [0.6, 0.7], [20, 0]);
 
     return (

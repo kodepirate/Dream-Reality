@@ -1,7 +1,6 @@
 import React from 'react';
 import './Partners.css';
 
-// Placeholder partner names as logos
 const partners = [
     "DAMAC", "EMAAR", "NAKHEEL", "SOBHA", "MERAAS", "OMNIYAT",
     "AZIZI", "BINGHATTI", "DAR AL ARKAN", "DANUBE"

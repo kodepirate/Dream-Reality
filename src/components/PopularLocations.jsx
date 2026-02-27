@@ -59,9 +59,8 @@ const PopularLocations = () => {
         const scrollContainer = scrollRef.current;
         if (!scrollContainer) return;
 
-        const setWidth = properties.length * 410; // 4 items (380px width + 30px gap) = 1640px
+        const setWidth = properties.length * 410;
 
-        // Start at the second set immediately so we can scroll left
         setTimeout(() => {
             if (scrollContainer.scrollLeft < setWidth / 2) {
                 scrollContainer.scrollLeft = setWidth;
@@ -100,7 +99,7 @@ const PopularLocations = () => {
 
             setTimeout(() => {
                 setIsManuallyScrolling(false);
-            }, 600); // 600ms allows native scroll to visually finish
+            }, 600);
         }
     };
 
